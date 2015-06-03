@@ -17,13 +17,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+	[UIView animateWithDuration:0.5
+						  delay:0.0
+						options:UIViewAnimationOptionRepeat|
+								 UIViewAnimationOptionAutoreverse|
+								 UIViewAnimationOptionCurveEaseInOut
+					 animations:^{
+						 self.label.transform = CGAffineTransformMakeScale(1.2, 1.2);
+					 } completion:^(BOOL finished) {
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+					 }];
 }
 
 @end
