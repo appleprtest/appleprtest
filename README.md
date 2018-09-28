@@ -1,4 +1,4 @@
 appleprtest
 ===========
 
-Testing PRs for Pocket Trailer.
+Testing PRs for Trailer.
